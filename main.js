@@ -12,7 +12,7 @@
 		const [, {friends: [{name: friend1}, {name: friend2}, {name: friend3}]}] = people,
 			janeFriends = [friend1, friend2, friend3];
 
-			let result = listJaneFriends.innerHTML = janeFriends.map((friend, idx) => {
+			listJaneFriends.innerHTML = janeFriends.map((friend, idx) => {
 				return `<li>${friend}</li>`;
 			}).join('');
 	}
