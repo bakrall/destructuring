@@ -31,7 +31,7 @@
 		const {first_name: name, employment: {title: job}, family: [, {first_name: secondChildsFirstName}]} = person;
 
 		personName.textContent = name;
-		personDetails.innerHTML = `Job title: ${job}, second child's name: ${secondChildsFirstName}`;
+		personDetails.textContent = `Job title: ${job}, second child's name: ${secondChildsFirstName}`;
 	}
 
 	displayJaneFriendsButton.addEventListener('click', getAndDisplayFriends);
